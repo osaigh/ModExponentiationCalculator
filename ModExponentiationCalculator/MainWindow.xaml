@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ModExponentiationCalculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="200" Width="400">
+    <Grid Margin="0,0,-73,-20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <SolidColorBrush Color="LightGray"/>
+        </Grid.Background>
+        <Label Content="b" FontSize="14" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+        <Label Content="n" Grid.Row="1" FontWeight="Bold" FontSize="14" HorizontalContentAlignment="Center"/>
+        <Label Content="m" Grid.Row="2" FontWeight="Bold" FontSize="14" HorizontalContentAlignment="Center"/>
+        <TextBlock Grid.Row="3" FontWeight="Bold" FontSize="14" TextAlignment="Center">
+            <Run>(b</Run>
+            <Run BaselineAlignment="Superscript">n</Run>
+            <Run>)mod m</Run>
+        </TextBlock>
+
+        <Label Grid.Column="1" Grid.Row="0" Name="bValue"/>
+        <Label Grid.Column="1" Grid.Row="1" Name="nValue"/>
+        <Label Grid.Column="1" Grid.Row="2" Name="mValue"/>
+        <Label Grid.Column="1" Grid.Row="3" Name="result"/>
     </Grid>
 </Window>
