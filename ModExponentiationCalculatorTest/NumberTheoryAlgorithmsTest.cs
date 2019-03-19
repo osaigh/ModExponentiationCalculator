@@ -5,10 +5,10 @@ using ModExponentiationCalculator;
 namespace ModExponentiationCalculatorTest
 {
     [TestClass]
-    public class UnitTest1
+    public class NumberTheoryAlgorithmsTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ModExponentiation_BaseOperation_Expected36()
         {
             NumberTheoryAlgorithms modCalculator = new NumberTheoryAlgorithms();
 
