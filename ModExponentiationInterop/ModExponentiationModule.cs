@@ -1,14 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net.Sockets;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ModExponentiationInterop
 {
+    /// <summary>
+    /// A COM component that provides inter-process communication. 
+    /// Can be consumed in an Excel spreadsheet
+    /// </summary>
     [Guid("7887862B-75B0-4169-8648-CE9433DA1AE2")]
     [ClassInterface(ClassInterfaceType.AutoDual)]
     [ComVisible(true)]
